@@ -1,0 +1,69 @@
+/* WP Checkout admin styles */
+
+.p_description{
+font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+font-size:10px;
+font-style:italic;
+color:#666666;
+float:left;
+width:230px;
+
+}
+
+.wpckt h3{
+-x-system-font:none;
+font-family:Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+font-size:18px;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+line-height:24px;
+margin:8px 0;
+}
+
+.wpckt .form-table input.small-text {
+width:80px !important;
+}
+
+.wpckt .form-table th, #wpbody-content .describe th {
+padding:5px !important;
+}
+
+.wpckt .column-posts {
+width:20%;
+}
+
+.wpckt .column-role{
+width:10%;
+}
+
+.wpckt .column-username{
+width:30%;
+}
+
+.wpckt .widefat a {
+text-decoration:underline;
+}
+
+.wpckt .alert{
+padding:0;
+border:0;
+}
+
+.wpckt .alert div{
+background-color:#FFFBE4;
+border-bottom:#DFDFDF solid 1px;
+padding:10px 5px;
+}
+
+
+
+/* Widget */
+
+.wpchkt_cart_w {
+background-color:#EFEFEF;
+margin:0 0 10px;
+padding:5px;
+}

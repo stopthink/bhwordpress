@@ -1,0 +1,36 @@
+#wordpress
+.htaccess
+wp/wp-*.php
+wp/xmlrpc.php
+wp/wp-admin/
+wp/wp-includes/
+wp/wp-content/uploads/
+wp/wp-content/blogs.dir/
+wp/wp-content/upgrade/*
+wp/wp-content/backup-db/*
+wp/wp-content/advanced-cache.php
+wp/wp-content/wp-cache-config.php
+wp/wp-content/cache/*
+wp/wp-content/cache/supercache/*
+wp/sitemap.xml
+wp/sitemap.xml.gz
+wp/readme.html
+wp/license.txt
+
+
+# vim
+*.sw*
+
+# textmate
+.tmproj
+
+# mac
+._*
+__MACOSX
+.DS_Store
+
+# win
+*~
+Thumbs.db
+desktop.ini
+
