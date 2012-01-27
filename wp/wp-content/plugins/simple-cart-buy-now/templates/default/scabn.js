@@ -48,14 +48,16 @@ $(document).ready(function(){
 
     function get_custom_quantities(option) { 
         option_field = $(option);
-        product_info = option_field.val().split('-');
-        name = product_info[0].trim();
-        price = product_info[1].replace('$', '').trim();
-        /* set proper values in the dom */
-        id = option_field.parent().parent().attr('class');
-        $("form."+id+" .item_price").val(price); // set hidden field
-        $("form."+id+" .product-price").html('$' + parseFloat(price).toFixed(2)); // set hidden field
-        //$("form."+id+" .item_name").val($("form."+id+" .product-title").html() + " - " + name);
+        if (option_field.length > 0) {
+            product_info = option_field.val().split('-');
+            name = product_info[0].trim();
+            price = product_info[1].replace('$', '').trim();
+            /* set proper values in the dom */
+            id = option_field.parent().parent().attr('class');
+            $("form."+id+" .item_price").val(price); // set hidden field
+            $("form."+id+" .product-price").html('$' + parseFloat(price).toFixed(2)); // set hidden field
+            $("form."+id+" .item_name").val($("form."+id+" .product-title").html() + " - " + name);
+        }
     }
 
     get_custom_quantities(".item_options");

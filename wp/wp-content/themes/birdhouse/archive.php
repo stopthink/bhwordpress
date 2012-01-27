@@ -7,7 +7,11 @@
                 <h3><?php the_title() ?></h3>
                 <p>by: <b><?php the_author() ?></b> on <?php the_date() ?></p>
                 <?php the_content() ?>
-            <?php endwhile; else: endif; ?>
+            <?php endwhile; ?>
+
+            <?php next_posts_link('&laquo; Older Entries') ?>
+            <?php previous_posts_link('Newer Entries &raquo;') ?>
+            <?php else: endif; ?>
             </div>
             
             <?php get_sidebar('blog'); ?>            
