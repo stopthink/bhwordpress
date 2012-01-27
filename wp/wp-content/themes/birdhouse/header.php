@@ -43,7 +43,13 @@
 
     <div class="header-wrap">
         <div class="header-content">
-        <h1><a href="<?php bloginfo('url') ?>">Birdhouse Buying Club</a></h1>
+            <div class="widget wpchkt_w" id="wpchkt_w-2">
+                <div id="wpchkt_widget">
+                    <span class="tiny_cart">Your cart is empty</span>
+                </div>
+            </div>
+            
+            <h1><a href="<?php bloginfo('url') ?>">Birdhouse Buying Club</a></h1>
 
             <ul class="nav">
                 <?php wp_nav_menu(); ?>

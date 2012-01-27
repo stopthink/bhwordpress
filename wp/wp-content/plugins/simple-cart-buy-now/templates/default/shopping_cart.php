@@ -21,11 +21,13 @@
             <input type='text' name='qty_<?php  echo $i; ?>' size='2' value='<?php echo $item['qty'] ?>' class = 'qty_<?php  echo $item['id']; ?>' title='<?php echo $item['id']; ?>' /></td>
 				<!--<td><a href='<?php echo $item['url'] ?>'><strong><?php echo $item['name'] ?></strong>-->
 				<td><strong><?php echo $item['name'] ?></strong>
-				<?php 
+<?php   
+           // we're not displaying options right now as options are always reflected in the name of the product in the select field 
+            /*
                 if (count($item['options']) > 0){
                     echo ', ';
                     echo scabn_item_options($item['options']);
-				} 
+                } */
 				?>
                 
                 </td>

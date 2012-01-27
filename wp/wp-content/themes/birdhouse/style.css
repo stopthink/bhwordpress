@@ -298,6 +298,26 @@ table.cart td {
 .cart_remove_col {
     width: 60px;
 }
+
+/* Tiny cart widget */
+.wpchkt_w {
+    float: right;
+    padding: 10px 15px;
+    background: #fff;
+    position: absolute;
+    right: 15px;
+
+    box-shadow: 0 0 2px #ddd;
+    -moz-box-shadow: 0 0 2px #ddd;
+    -webkit-box-shadow: 0 0 2px #ddd;
+
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
 /* ---------------------------- */
 
 
@@ -376,4 +396,4 @@ form {
 
 /* we want to use widget titles for organization in backend, but don't 
  * want then to display on the front end */
-.content-aside .widget_title { display: none; }
+.cart.content-aside .widget_title { display: none; }

@@ -43,6 +43,13 @@ if (function_exists('register_sidebar')) {
         'before_title' => '<h4 class="widget_title">',
         'after_title' => '</h4>'
     ));
+    register_sidebar(array(
+        'name' => 'Blog Sidebar',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class="widget_title">',
+        'after_title' => '</h4>'
+    ));
 }
 
 # parse shortcodes in widgets
