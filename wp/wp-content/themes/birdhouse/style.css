@@ -397,3 +397,17 @@ form {
 /* we want to use widget titles for organization in backend, but don't 
  * want then to display on the front end */
 .cart.content-aside .widget_title { display: none; }
+
+.content-aside .widget {margin-bottom: 25px;}
+
+
+/* coming soon screen for users who aren't logged in */
+.coming_soon {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(255,255,255,0.9);
+    z-index: 10;
+    color: #000;
+    padding-top: 90px;
+}

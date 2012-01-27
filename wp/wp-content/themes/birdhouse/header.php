@@ -40,7 +40,14 @@
     
     <body>
 
+<?php if (!current_user_can('manage_options')) { ?>
+<div class="coming_soon">
+<p style="text-align: center;"><img src="<?php bloginfo('url') ?>/chicken.png"><br />
+<p style="text-align: center;">Good things coming (very) soon =]</p>
+</div>
+<?php } ?>
 
+</div>
     <div class="header-wrap">
         <div class="header-content">
             <div class="widget wpchkt_w" id="wpchkt_w-2">
