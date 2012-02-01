@@ -540,7 +540,7 @@ function scabn_make_google_button($options,$shipoptions,$items) {
 	$gc .= "\n<checkout-flow-support>
         <merchant-checkout-flow-support>";
    
-    $gc =" :<shipping-methods>";
+    $gc ="<shipping-methods>";
 
 	foreach($shipoptions as $soption) {
 		$gc .= "\n\t<flat-rate-shipping name=\"". $soption['name'] . "\">";
