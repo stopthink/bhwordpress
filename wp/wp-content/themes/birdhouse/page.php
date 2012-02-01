@@ -13,7 +13,7 @@
 
             </div>
             
-            <?php get_sidebar('blog'); ?>
+            <?php get_sidebar(); ?>
  
             <div class="cf"></div>
 
