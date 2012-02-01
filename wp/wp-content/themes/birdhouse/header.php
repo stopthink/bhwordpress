@@ -30,11 +30,9 @@
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url') ?>" media="screen" />
         <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>;charset=<?php bloginfo('charset'); ?>" />
         <meta charset="<?php bloginfo('charset'); ?>">
-        
-        <?php wp_enqueue_script('jquery') ?>
+        <?php wp_register_script('jquery.color', get_template_directory_uri() . '/js/jquery.color.js', array('jquery')) ?>
+        <?php wp_enqueue_script('jquery.color') ?> 
 
-        <!--<script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/name.js" />-->
-        
         <?php wp_head() ?>
     </head>
     

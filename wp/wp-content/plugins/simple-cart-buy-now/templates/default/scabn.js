@@ -37,10 +37,14 @@ $(document).ready(function(){
 			var shipping = $("form."+id+" .item_shipping").val();
 			var itemValues = "item_id="+ id + "&item_name=" + name + "&item_options_name="+item_options_name+"&item_options="+item_options+"&item_url=" + escape(url) + "&item_qty=" + qty + "&item_price="+price+"&item_shipping=" +shipping+ "&action=add_item"; 
 			load_cart(itemValues);
-			
+            flash_cart(); // flash cart yellow to help people follow what's going on			
 			return false; 
 	
 	});
+
+    function flash_cart() {
+        $("#wpchkt_w-2").stop().css("background-color", "#FFFF9C").animate({ backgroundColor: $.Color( "#ffffff" ) }, 1500);
+    }
 
     $('.item_options').change(function() {
         get_custom_quantities(this);
@@ -98,14 +102,13 @@ function switch_state(){
 }
  
 function load_cart(values){
-
 	 $("#wpchkt_widget").load(scabn_c_url, values,function(){
 			$(".preload_img").hide();
 			 $("#wpchkt_widget .update_cart").hide();
 			 buttons_events();									 
 	 });
-
 }
+
  
 function buttons_events() {
 	
