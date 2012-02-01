@@ -16,9 +16,10 @@ wp/sitemap.xml
 wp/sitemap.xml.gz
 wp/readme.html
 wp/license.txt
+wp/wp-content/plugins/*
+!wp/wp-content/plugins/simple-cart-buy-now
 
-
-# vim
+#* vim
 *.sw*
 
 # textmate
