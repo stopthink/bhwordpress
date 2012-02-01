@@ -538,9 +538,8 @@ function scabn_make_google_button($options,$shipoptions,$items) {
 
 	$gc .= "\n\t</items></shopping-cart>";
 	$gc .= "\n<checkout-flow-support>
-        <merchant-checkout-flow-support>";
-   
-    $gc ="<shipping-methods>";
+    <merchant-checkout-flow-support>
+      <shipping-methods>";
 
 	foreach($shipoptions as $soption) {
 		$gc .= "\n\t<flat-rate-shipping name=\"". $soption['name'] . "\">";
@@ -562,9 +561,7 @@ function scabn_make_google_button($options,$shipoptions,$items) {
         	$gc .= "\n\t</flat-rate-shipping>";
 	}
 	//End Shipping for Google Checkout
-    $gc .= "\n</shipping-methods>";
-
-    $gc .= "</merchant-checkout-flow-support></checkout-flow-support>\n";
+	$gc .= "\n</shipping-methods></merchant-checkout-flow-support></checkout-flow-support>\n";
 	//End Google Cart
 	$gc .= "\n</checkout-shopping-cart>";
 
