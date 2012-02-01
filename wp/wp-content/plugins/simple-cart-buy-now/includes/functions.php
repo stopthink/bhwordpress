@@ -420,6 +420,7 @@ function scabn_process() {
 
 
 function scabn_make_paypal_button($options,$items) {
+    /*
 	$currency = $options['currency'];
 	$paypal_email = $options['paypal_email'];	
 	$paypal_url = $options['paypal_url'];
@@ -486,7 +487,8 @@ function scabn_make_paypal_button($options,$items) {
 	$ppo .= "<input type=\"image\" border=\"0\" name=\"submit\"
          src=\"https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif\" 
          alt=\"Make payments with PayPal - it's fast, free and secure!\"></form>";
-	return $ppo;
+    return $ppo;
+     */
 
 }
 

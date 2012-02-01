@@ -4,9 +4,11 @@
 
             <div class="content-main">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <div class="blog-post">
                 <h3><?php the_title() ?></h3>
                 <p>by: <b><?php the_author() ?></b> on <?php the_date() ?></p>
                 <?php the_content() ?>
+            </div>
             <?php endwhile; ?>
 
             <?php next_posts_link('&laquo; Older Entries') ?>
