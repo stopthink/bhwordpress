@@ -15,7 +15,7 @@
 
             </div>
             
-            <?php get_sidebar('blog'); ?>            
+            <?php get_sidebar('blog'); ?>
  
             <div class="cf"></div>
 
