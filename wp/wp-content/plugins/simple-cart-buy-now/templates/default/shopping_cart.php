@@ -45,7 +45,7 @@
 				</td>
 				</tr>
 <?php 
-
+            $remove_url = '';
 			$i ++;
 			}
 
