@@ -45,7 +45,7 @@ body {
     width: 598px;
     padding: 20px;
     float: left;
-    min-height: 505px;
+    min-height: 520px;
 
     background: url('images/texture_light.gif');
     -webkit-border-top-left-radius: 5px;
