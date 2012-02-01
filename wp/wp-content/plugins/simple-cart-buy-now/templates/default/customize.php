@@ -98,11 +98,12 @@ function getShippingOptions($items) {
 	//formula into paypal website. 
 	//region can be "all" "NotUSA" or "USA"
 	$ship=array();
-	$ship[]=array("name" => "USPS Standard Shipping", "price" => "5", "region" => "all");
-	$ship[]=array("name" => "USPS Priority Shipping (USA Only)", "price" => "10", "region" => "USA");
-	$ship[]=array("name" => "USPS Express Shipping (USA Only)", "price" => "20", "region" => "USA");
-	$ship[]=array("name" => "Global Priority (6-10 days)", "price" => "20", "region" => "NotUSA");
-	$ship[]=array("name" => "Global Express (6 days)", "price" => "30", "region" => "NotUSA" );
+	$ship[]=array("name" => "Pickup", "price" => "0", "region" => "all");
+	$ship[]=array("name" => "Delivery", "price" => "5", "region" => "all");
+	//$ship[]=array("name" => "USPS Priority Shipping (USA Only)", "price" => "10", "region" => "USA");
+	//$ship[]=array("name" => "USPS Express Shipping (USA Only)", "price" => "20", "region" => "USA");
+	//$ship[]=array("name" => "Global Priority (6-10 days)", "price" => "20", "region" => "NotUSA");
+	//$ship[]=array("name" => "Global Express (6 days)", "price" => "30", "region" => "NotUSA" );
 	return $ship;
 }
 
